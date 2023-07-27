@@ -1,0 +1,115 @@
+@font-face {
+    font-family: "CustomFont";
+    src: url("assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
+    }
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "CustomFont";
+}
+
+.main-container{
+    background-color: rgb(229, 229, 229);
+    display: flex;
+    height:95vh;
+}
+
+.summary-section{
+    width: 720px;
+    margin: auto;
+    padding: 10px;
+}
+
+.summary-section .row{
+    display:flex;
+}
+
+.result-column{
+    flex-basis: 40%;
+    background-image: linear-gradient(180deg, #6743ff, #342eea);
+    border-radius: 20px;
+    text-align: center;
+    padding: 24px 60px;
+    color: #fff;
+}
+
+.summary-column {
+    flex-basis: 60%;
+    padding: 0 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+.score-circle {
+    background:linear-gradient(180deg, #4c23c7, #4734ee);
+    border-radius: 200px;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 44px;
+    margin-bottom: 37px;
+}
+
+.main-num {
+    font-size: 76px;
+    display: block;
+    margin-bottom: -5px;
+}
+
+.out-of {
+    color: #8276fc;
+}
+
+.continue{
+    cursor: pointer;
+    border: none;
+    background-image: linear-gradient(180deg, #6644fd, #322ce6);
+    color: #fff;
+    padding: 15px 10px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.list.visual{
+    margin-bottom: 0;
+}
+
+.total{
+    color: #8c8897;
+}
+
+.total b{
+    color: #000;
+}
+
+span.icon img {
+    transform: translate(0px, 5px);
+}
+
+.continue:hover {
+    box-shadow: 0px 6px 5px #00000033
+}
+
+.footer{
+    text-align: center;
+    margin-top: 15px;
+}
+
+@media screen and (max-width:767px){
+    .summary-section .row{
+        display:block;
+    }
+}
